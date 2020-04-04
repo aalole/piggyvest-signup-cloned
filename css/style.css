@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #062863;
+}
+
+.container{
+    max-width: 450px;
+    margin: auto;
+    background: #fff;
+    min-height: 100vh;
+    border-radius: 10px;
+    padding-top: 40px;
+   
+}
+.form-div{
+    overflow-y: auto;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin: auto;
+}
+.logo{
+    text-align: center;
+    padding: 40px;
+}
+h1{
+    font-size: 1.25rem;
+    text-align: center;
+    color:#083e93;
+    font-family: U8,sans-serif
+}
+p{
+    text-align: center;
+    color: #4a5568;
+    font-size: 0.875rem;
+    font-family: 'Karla',sans-serif;
+}
+
+form label{
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: .75rem;
+    color: #4a5568;
+    margin-bottom: .25rem;
+    font-family: sans-serif;
+}
+form label, input, select{
+    padding: 20px 0 10px 0;
+}
+input, select{
+    background-color: #edf2f7; 
+    border: 0 solid #e2e8f0;
+    border-radius: 3px;
+}
+input::placeholder{
+    padding-left: 10px;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+button{
+    width: 80%;
+    margin: 30px;
+    margin-left: 45px;
+    background-color: #083e9e;
+    padding: 25px 10px;
+    color: #fff;
+    font-weight: bold;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: none;
+}
+button:hover{
+    background-color: #062863;
+}
+h4{
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+h4 a{
+    text-decoration: none;
+    color: #f5f4f3;
+    font-size: 0.75rem;
+    font-weight: 400;
+    font-family: karla, sans-serif;
+    letter-spacing: 1.2px;
+}
+h4 a:hover{
+    color: rgb(255, 255, 255, 0.5);
+}
+
+
+/* styling select */
+.custom-select {
+    position: relative;
+    font-family: Arial;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element: */
+  }
+
+  .select-selected {
+    background-color: #edf2f7; 
+    padding: 20px auto;
+  }
+  
+/* Style the arrow inside the select element: */
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #e2e8f0 transparent transparent transparent;
+  }
+  
+  /* Point the arrow upwards when the select box is open (active): */
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #1a202c transparent;
+    top: 7px;
+  }
+  
+  /* style the items (options), including the selected item: */
+  .select-items div,.select-selected {
+    color:  rgb(26, 32, 44);;
+    padding: 10px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    text-transform: capitalize;  
+    border-radius: 2px; 
+    /* background-color: dodgerblue; */
+  }
+  
+  /* Style items (options): */
+  .select-items {
+    background-color: #fff;
+    color: #e2e8f0;
+    height: 100px;
+    overflow-y: auto; 
+  }
+  .blue{
+    background-color: dodgerblue;
+  }
+  
+  /* Hide the items when the select box is closed: */
+  .select-hide {
+    display: none;
+  }
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  select{
+      overflow-y: scroll;
+  }
